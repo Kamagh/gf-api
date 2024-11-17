@@ -6,7 +6,7 @@ app.get('/api/analysis', async (req, res) => {
       )}. Include details such as investors, funding, revenue, market share, etc.`;
   
       const response = await openai.createCompletion({
-        model: 'text-davinci-003',
+        model: 'gpt-3.5-turbo',
         prompt: prompt,
         max_tokens: 500,
       });
